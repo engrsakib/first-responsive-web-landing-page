@@ -9,3 +9,37 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* sherad style */
+.display-flex{
+  display: flex;
+}
+.text-gary{
+  color: rgb(66, 66, 66);
+}
+.text-light-gary{
+  color: rgb(114, 114, 114);
+}
+.bg_light{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+/* navbar style */
+.nav-bar{
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-items{
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-items .nav-link{
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-bar, .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
