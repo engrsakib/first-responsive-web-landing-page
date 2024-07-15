@@ -110,7 +110,7 @@ main > section {
   font-weight: 500;
 }
 /* our facts design */
-.facts-container{
+.facts-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -126,32 +126,69 @@ main > section {
   justify-content: center;
   text-align: center;
 }
-.fact-number{
+.fact-number {
   font-size: 2.8rem;
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 10px;
 }
-.fact-name{
+.fact-name {
   font-size: 1.25rem;
   font-weight: 600;
   margin-top: 5px;
 }
-.fact-description{
+.fact-description {
   max-width: 50%;
 }
 /* sponser related */
-.sponsor-info{
+.sponsor-info {
   max-width: 540px;
   margin: 50px auto;
   text-align: center;
 }
-.sponsor-companies{
+.sponsor-companies {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   filter: grayscale(100%);
 }
-
+/*features section related style  */
+#features_title-id {
+  border-left: 5px solid rgb(255, 144, 14);
+  padding-left: 21px;
+}
+.featurses-card-continer {
+  padding: 30px;
+  width: 434px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.featurses-card-continer .features_title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ffs {
+  gap: 100px;
+  width: 70%;
+}
+.ffs-img img {
+  width: 530px;
+}
+#expariance-badge {
+  padding: 45 42;
+  margin-left: -70px;
+  margin-top: -100px;
+}
+#expariance-year {
+  font-size: 3rem;
+  font-weight: 700;
+}
+#ex {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 /* responsive media */
 @media screen and (max-width: 576px) {
   .nav-links,
@@ -159,21 +196,36 @@ main > section {
   .teams {
     flex-direction: column;
   }
-  .teams_img_continer, .sponsor-companies {
+  .teams_img_continer,
+  .sponsor-companies {
     grid-template-columns: repeat(1, 1fr);
   }
   .our_features {
     margin-left: 20px;
   }
-  .fact-description{
+  .fact-description {
     max-width: 100%;
   }
-  .facts-container, .sponsor-companies{
+  .facts-container,
+  .sponsor-companies {
     grid-template-columns: repeat(1, 1fr);
     /* margin: 0 auto;
      */
-     justify-items: center;
+    justify-items: center;
     gap: 24px;
+  }
+  .ffs {
+    flex-direction: column;
+    width: 100%;
+  }
+  .featurses-card-continer {
+    width: auto;
+  }
+  .ffs-img img {
+    width: 100%;
+  }
+  #expariance-badge {
+    margin: -50px -20px;
   }
 }
 
@@ -186,11 +238,23 @@ main > section {
   .our_features {
     margin: 50px auto;
   }
-  .facts-container, 
-  .sponsor-companies{
+  .facts-container,
+  .sponsor-companies {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 24px;
   }
-
+  .ffs {
+    flex-direction: column;
+    width: 100%;
+  }
+  .featurses-card-continer {
+    width: auto;
+  }
+  .ffs-img img {
+    width: 100%;
+  }
+  #expariance-badge {
+    margin: -50px -20px;
+  }
 }
