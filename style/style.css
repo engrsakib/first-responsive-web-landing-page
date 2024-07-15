@@ -122,3 +122,14 @@ main > section{
   }
   
 }
+
+/* mediam */
+@media screen and (min-width: 577px) and (max-width: 992px){
+  .teams{
+    flex-direction: column;
+  }
+
+  .our_features{
+    margin: 50px auto;
+  }
+}
